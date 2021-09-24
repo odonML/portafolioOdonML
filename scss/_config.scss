@@ -24,7 +24,7 @@ a{
     height: 100vh;
     margin: 0px auto;
     // border: solid 1px red;
-    @include displayFlexBox(flex, column, space-between, flex-start, nowrap);
+    @include displayFlexBox(flex, column-reverse, space-between, flex-start, nowrap);
 }
 .row{
     width: 100%;

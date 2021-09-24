@@ -33,9 +33,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -72,7 +72,6 @@ a {
 
 .navbar .list {
   width: auto;
-  border: solid 1px blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,10 +87,35 @@ a {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .navbar .list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: 0px 10px;
-  padding: 5px;
+}
+
+.navbar .list .item .item-text {
+  display: none;
+}
+
+.navbar .list .item .item-icon {
+  height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
