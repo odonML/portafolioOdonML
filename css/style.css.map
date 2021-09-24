@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,UAAU;CACzB;;AACD,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,KAAK;CAC1B;;AACD,AAAA,EAAE,CAAA;EACE,UAAU,EAAE,IAAI;CACnB;;AACD,AAAA,CAAC,CAAA;EACG,eAAe,EAAE,IAAI;EACrB,gBAAgB,EAAE,KAAK;CAC1B;;AACD,AAAA,UAAU,CAAA;EACN,SAAS,EAAE,MAAM;EACjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,QAAQ;EDlBhB,OAAO,ECoBiB,IAAI;EDnB5B,cAAc,ECmBgB,MAAM;EDlBpC,eAAe,ECkBuB,aAAa;EDjBnD,WAAW,ECiB0C,UAAU;EDhB/D,SAAS,ECgBwD,MAAM;CAC1E;;AACD,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,aAAa;EDxBrB,OAAO,ECyBiB,IAAI;EDxB5B,cAAc,ECwBgB,GAAG;EDvBjC,eAAe,ECuBoB,MAAM;EDtBzC,WAAW,ECsBgC,MAAM;EDrBjD,SAAS,ECqB0C,MAAM;CAC5D",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/_utils.scss",
+        "../scss/_mixins.scss",
+        "../scss/_config.scss",
+        "../scss/_navbar.scss",
+        "../scss/_social-networks.scss",
+        "../scss/_home.scss",
+        "../scss/_education.scss",
+        "../scss/_portfolio.scss",
+        "../scss/_design.scss",
+        "../scss/_skills.scss",
+        "../scss/_interested.scss",
+        "../scss/_contact.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
