@@ -1,0 +1,13 @@
+.navbar{
+    height: 50px;
+    // width esta en _config/.row
+    .list{
+        width: auto;
+        border: solid 1px blue;
+        @include displayFlexBox(flex, row, center, center, nowrap);
+        .item{
+            margin: 0px 10px;
+            padding: 5px;
+        }
+    }
+}
