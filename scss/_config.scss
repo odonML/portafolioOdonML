@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Roboto-Mono";
+    src: url("../font/RobotoMono-Regular.ttf") format("truetype");
+  }
 *{
     margin: 0px;
     padding: 0px;
@@ -5,6 +9,7 @@
 }
 body{
     background-color: white; //imagen de fondo
+    font-family: "Roboto-Mono";
 }
 ul{
     list-style: none;
