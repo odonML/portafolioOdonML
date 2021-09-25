@@ -1,23 +1,40 @@
 @media (min-width: 768px) {
-    .container{
-        @include displayFlexBox(flex, column, space-between, flex-start, nowrap);
-    }
-    .navbar{
-        .list{
-            padding: none;
-            background-color: transparent;
-            border-radius: none;
-            .item{
-                margin: 0px 5px;
-                padding: 5px;
-                .item-text{
-                    display: block;
-                }
-                .item-icon{
-                    display: none;
-                }
-
-            }
+  .container {
+    @include displayFlexBox(flex, column, space-between, flex-start, nowrap);
+  }
+  .navbar {
+    .list {
+      padding: none;
+      background-color: transparent;
+      border-radius: none;
+      .item {
+        margin: 0px 5px;
+        padding: 5px;
+        .item-text {
+          display: block;
         }
+        .item-icon {
+          display: none;
+        }
+      }
     }
+  }
+  .principal {
+    width: 100%;
+    @include displayFlexBox(flex, row, center, center, nowrap);
+    .secundario {
+      width: 66%;
+      @include displayFlexBox(flex, row-reverse, center, center, nowrap);
+      .caja {
+          width: 50%;
+      }
+    }
+    .terciario {
+        width: 33%;
+    }
+  }
+  .contenido{
+    padding: 8px;
+    @include displayFlexBox(flex, row, center, center, nowrap);
+  }
 }
