@@ -68,6 +68,7 @@ a {
       flex-wrap: nowrap;
 }
 
+<<<<<<< HEAD
 .titulo {
   font-size: 60px;
 }
@@ -123,6 +124,15 @@ a {
 }
 
 .navbar .list .item {
+=======
+.social-nav {
+  height: 50px;
+}
+
+.social-nav .list {
+  width: 100%;
+  border: solid 1px blue;
+>>>>>>> social-nav
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,14 +140,21 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> social-nav
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+<<<<<<< HEAD
   margin: 0px 10px;
 }
 
@@ -183,5 +200,7 @@ a {
   .navbar .list .item .item-icon {
     display: none;
   }
+=======
+>>>>>>> social-nav
 }
 /*# sourceMappingURL=style.css.map */
