@@ -8,8 +8,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: white; //imagen de fondo
+    background-image: url("../img/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: "Roboto-Mono";
+    color: $color-primero; //este color cambiar a blanco. $color-primero
 }
 ul{
     list-style: none;
@@ -28,6 +31,28 @@ a{
 }
 .row{
     width: 100%;
-    border: solid 1px red;
+    // border: solid 1px red;
     @include displayFlexBox(flex, row, center, center, nowrap);
+}
+
+.titulo{
+    font-size: $titulo-size;
+}
+.sub-titulo{
+    font-size: $sub-titulo-size;
+}
+.parrafo{
+    font-size: $parrafo-size;
+}
+.c-rosa{
+    color: $color-segundo;
+}
+.c-azul{
+    color: $color-tercero;
+}
+.c-amarillo{
+    color: $color-cuarto;
+}
+.c-angular{
+    color: $color-angular;
 }

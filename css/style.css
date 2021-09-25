@@ -11,8 +11,11 @@
 }
 
 body {
-  background-color: white;
+  background-image: url("../img/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: "Roboto-Mono";
+  color: #ffffff;
 }
 
 ul {
@@ -48,7 +51,6 @@ a {
 
 .row {
   width: 100%;
-  border: solid 1px red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +66,34 @@ a {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+.titulo {
+  font-size: 60px;
+}
+
+.sub-titulo {
+  font-size: 35px;
+}
+
+.parrafo {
+  font-size: 25px;
+}
+
+.c-rosa {
+  color: #FF00FF;
+}
+
+.c-azul {
+  color: #00F0FF;
+}
+
+.c-amarillo {
+  color: #FFE600;
+}
+
+.c-angular {
+  color: #FF7D7D;
 }
 
 .navbar {
@@ -117,6 +147,7 @@ a {
 
 .navbar .list .item .item-icon {
   height: 24px;
+  fill: #FF00FF;
 }
 
 @media (min-width: 768px) {
