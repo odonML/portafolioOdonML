@@ -3,7 +3,12 @@
     // width esta en _config/.row
     .list{
         width: 100%;
-        border: solid 1px blue;
         @include displayFlexBox(flex, row, space-between, center, nowrap);
+        .item{
+            height: 24px;
+            .item-social-icon{
+                fill: $color-segundo;
+            }
+        }
     }
 }
