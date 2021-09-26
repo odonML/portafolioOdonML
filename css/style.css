@@ -24,7 +24,13 @@ ul {
 
 a {
   text-decoration: none;
-  background-color: black;
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
 }
 
 .container {
@@ -95,6 +101,11 @@ a {
 
 .c-angular {
   color: #FF7D7D;
+}
+
+.active {
+  border-bottom: solid 1px #FF00FF;
+  color: #FF00FF;
 }
 
 h1 {

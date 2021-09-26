@@ -19,7 +19,13 @@ ul{
 }
 a{
     text-decoration: none;
-    background-color: black;
+    color: $color-primero;
+}
+button{
+  border: none;
+  background-color: transparent;
+  color: $color-primero;
+
 }
 .container{
     max-width: 1440px;
@@ -57,6 +63,11 @@ a{
 }
 .c-angular{
     color: $color-angular;
+}
+
+.active{
+  border-bottom: solid 1px $color-segundo;
+  color: $color-segundo;
 }
 
 // Efecto de glitch
