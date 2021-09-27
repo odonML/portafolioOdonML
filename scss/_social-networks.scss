@@ -1,0 +1,14 @@
+.social-nav{
+    height: 50px;
+    // width esta en _config/.row
+    .list{
+        width: 100%;
+        @include displayFlexBox(flex, row, space-between, center, nowrap);
+        .item{
+            height: 24px;
+            .item-social-icon{
+                fill: $color-segundo;
+            }
+        }
+    }
+}
