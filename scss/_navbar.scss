@@ -13,10 +13,6 @@
             margin: 0px 10px;
             cursor: pointer;
             transition: .2s;
-            &:hover{
-                border-top: solid 1px $color-segundo;
-                color: $color-segundo;
-            }
             .item-text{
                 display: none;
             }

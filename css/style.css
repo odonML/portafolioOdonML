@@ -339,11 +339,6 @@ h2 {
   transition: .2s;
 }
 
-.navbar .list .item:hover {
-  border-top: solid 1px #FF00FF;
-  color: #FF00FF;
-}
-
 .navbar .list .item .item-text {
   display: none;
 }
@@ -409,6 +404,10 @@ h2 {
   .navbar .list .item {
     margin: 0px 5px;
     padding: 5px;
+  }
+  .navbar .list .item:hover {
+    border-top: solid 1px #FF00FF;
+    color: #FF00FF;
   }
   .navbar .list .item .item-text {
     display: block;
