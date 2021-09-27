@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   font-family: "Roboto-Mono";
   color: #ffffff;
+  overflow: hidden;
 }
 
 ul {
@@ -24,7 +25,13 @@ ul {
 
 a {
   text-decoration: none;
-  background-color: black;
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
 }
 
 .container {
@@ -69,6 +76,10 @@ a {
       flex-wrap: nowrap;
 }
 
+.caja {
+  margin: 5px;
+}
+
 .titulo {
   font-size: 60px;
 }
@@ -97,12 +108,39 @@ a {
   color: #FF7D7D;
 }
 
-h1 {
+.active {
+  border-bottom: solid 1px #FF00FF;
+  color: #FF00FF;
+}
+
+.behance {
+  width: 70px;
+  height: 70px;
+  fill: #FF00FF;
+}
+
+.iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+h2 {
   font-size: 2.5em;
   text-transform: uppercase;
-  margin-top: -17px;
-  -webkit-animation: titulo 250ms;
-          animation: titulo 250ms;
+  text-align: center;
 }
 
 .glitch {
@@ -253,6 +291,7 @@ h1 {
 }
 
 .navbar {
+  position: relative;
   height: 50px;
 }
 
@@ -295,6 +334,14 @@ h1 {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin: 0px 10px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar .list .item:hover {
+  border-top: solid 1px #FF00FF;
+  color: #FF00FF;
 }
 
 .navbar .list .item .item-text {
@@ -357,7 +404,6 @@ h1 {
   }
   .navbar .list {
     padding: none;
-    background-color: transparent;
     border-radius: none;
   }
   .navbar .list .item {
@@ -414,6 +460,23 @@ h1 {
   }
   .contenido {
     padding: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .iconos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
