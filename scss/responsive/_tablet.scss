@@ -5,7 +5,6 @@
   .navbar {
     .list {
       padding: none;
-      background-color: transparent;
       border-radius: none;
       .item {
         margin: 0px 5px;
@@ -35,6 +34,9 @@
   }
   .contenido{
     padding: 8px;
+    @include displayFlexBox(flex, column, center, flex-start, nowrap);
+  }
+  .iconos{
     @include displayFlexBox(flex, row, center, center, nowrap);
   }
 }
