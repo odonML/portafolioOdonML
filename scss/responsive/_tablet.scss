@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   body{
-    font-size: 14px;
+    font-size: 10px;
   }
   .container {
     @include displayFlexBox(flex, column, space-between, flex-start, nowrap);

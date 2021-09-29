@@ -467,7 +467,7 @@ h2 {
 
 @media (min-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 10px;
   }
   .container {
     display: -webkit-box;
@@ -585,6 +585,12 @@ h2 {
   .skills-icons {
     width: 35px;
     height: 35px;
+  }
+}
+
+@media (min-width: 999px) {
+  body {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
