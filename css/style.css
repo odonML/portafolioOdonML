@@ -29,6 +29,14 @@ a {
   color: #ffffff;
 }
 
+a.link {
+  padding: 0px 5px;
+}
+
+a.link:hover {
+  border: solid 1px #FF00FF;
+}
+
 button {
   border: none;
   background-color: transparent;
@@ -56,7 +64,6 @@ button {
           align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  border: solid 1px blue;
 }
 
 .row {
@@ -84,7 +91,6 @@ button {
 
 .principal {
   max-width: 500px;
-  border: solid 1px red;
 }
 
 .titulo {
@@ -146,6 +152,9 @@ button {
 h2 {
   font-size: 3.7em;
   text-transform: uppercase;
+  margin-top: 0px;
+  -webkit-animation: titulo 250ms;
+          animation: titulo 250ms;
   text-align: center;
 }
 
@@ -186,7 +195,7 @@ h2 {
 
 @-webkit-keyframes titulo {
   0% {
-    margin-top: 800px;
+    margin-top: 50px;
   }
   100% {
     margin-top: 0px;
@@ -195,7 +204,7 @@ h2 {
 
 @keyframes titulo {
   0% {
-    margin-top: 800px;
+    margin-top: 50px;
   }
   100% {
     margin-top: 0px;
@@ -388,7 +397,7 @@ h2 {
 .behance {
   width: 70px;
   height: 70px;
-  fill: #FF00FF;
+  fill: #ffffff;
 }
 
 .c-html {

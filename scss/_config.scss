@@ -24,6 +24,12 @@ a{
     text-decoration: none;
     color: $color-primero;
 }
+a.link{
+  padding: 0px 5px;
+  &:hover{
+    border: solid 1px $color-segundo;
+  }
+}
 button{
   border: none;
   background-color: transparent;
@@ -36,14 +42,10 @@ button{
     height: 100vh;
     padding: 0px 15px;
     margin: 0px auto;
-    // border: solid 1px red;
     @include displayFlexBox(flex, column-reverse, space-between, flex-start, nowrap);
-    border: solid 1px blue;
 }
 .row{
     width: 100%;
-
-    // border: solid 1px red;
     @include displayFlexBox(flex, row, center, center, nowrap);
 }
 .caja{
@@ -51,7 +53,6 @@ button{
 }
 .principal{
   max-width: 500px;
-  border: solid 1px red;
 }
 // font-size
 .titulo{
@@ -94,8 +95,8 @@ button{
 h2 {
     font-size: $titulo-size;
     text-transform: uppercase;
-    // margin-top: -17px;
-    // animation: titulo 250ms;
+    margin-top: 0px;
+    animation: titulo 250ms;
     text-align: center;
   }
 
@@ -136,7 +137,7 @@ h2 {
 
   @keyframes titulo {
     0% {
-      margin-top: 800px;
+      margin-top: 50px;
     }
     100% {
       margin-top: 0px;
