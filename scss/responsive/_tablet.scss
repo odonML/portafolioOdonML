@@ -44,5 +44,7 @@
     padding: 8px;
     @include displayFlexBox(flex, column, center, flex-start, nowrap);
   }
-
+  .iconos{
+    @include displayFlexBox(flex, column, center, center, nowrap);
+  }
 }
