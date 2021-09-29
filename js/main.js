@@ -1,4 +1,3 @@
-
 const principal = document.createElement("div");
 const secundario = document.createElement("div");
 const terciario = document.createElement("div");
@@ -14,69 +13,69 @@ terciario.classList.add("terciario");
 caja1.classList.add("caja");
 caja2.classList.add("caja", "contenido");
 caja3.classList.add("caja", "contenido");
-title.classList.add("glitch")
-
+title.classList.add("glitch");
 
 const content = document.getElementById("content");
 const frag = document.createDocumentFragment();
 
-const sectionsContent =[
-    {
-        id: "education",
-        titulo: "EDUCACIÓN",
-        parrafo1: `<h3 class="sub-titulo c-azul">Ing. En Sistemas</h3>
+const sectionsContent = [
+  {
+    id: "education",
+    titulo: "EDUCACIÓN",
+    parrafo1: `<h3 class="sub-titulo c-azul">Ing. En Sistemas</h3>
         <p class="parrafo">(2015 - 2020) <br>
         Escualea: Instituto Tecnológico 
         Superior de Zongolica. <br>
-        Titulo <span class="c-rosa">(En Proceso)</span>.
+        Título <span class="c-rosa">(En Proceso)</span>.
         </p>`,
-        parrafo2: `<h3 class="sub-titulo c-azul">Tec. En Programación</h3>
+    parrafo2: `<h3 class="sub-titulo c-azul">Tec. En Programación</h3>
         <p class="parrafo">(2013 - 2015) <br>
         Escuela: CBTis #142. <br>
         Diploma.
         </p>`,
-    },
-    {
-        id: "portfolio",
-        titulo: "PORTAFOLIO",
-        parrafo1: `<h3 class="sub-titulo c-azul">Broncemex</h3>
+  },
+  {
+    id: "portfolio",
+    titulo: "PORTAFOLIO",
+    parrafo1: `<h3 class="sub-titulo c-azul">Broncemex</h3>
         <p class="parrafo">(2020) <br>
         <span class="c-amarillo">Puesto:</span> Frontend Developer. <br>
-        <span class="c-rosa">Acitvidades:</span><br>
-        Desarrollo de pagina web 
+        <span class="c-rosa">Actividades:</span><br>
+        Desarrollo de página web 
         a la medida, con HTML, CSS,
         JS y Bootstrap.
         </p>`,
-        parrafo2: `<h3 class="sub-titulo c-azul">Kubeet</h3>
+    parrafo2: `<h3 class="sub-titulo c-azul">Kubeet</h3>
         <p class="parrafo">(2018 - 2019) <br>
         <span class="c-amarillo">Puesto:</span> Frontend Developer. <br>
-        <span class="c-rosa">Acitvidades:</span> <br>
+        <span class="c-rosa">Actividades:</span> <br>
         Desarrollar proyectos con
         HTML, CSS, SASS, JS,
         TypeScript, Bootstrap,
         <span class="c-angular">Angular</span>, Angular Material,
         Firebase y Rest APIs.
         </p>`,
-    },
-    {
-        id: "design",
-        titulo: "DISEÑOS",
-        parrafo1: `<h3 class="sub-titulo c-azul">También</h3>
+  },
+  {
+    id: "design",
+    titulo: "DISEÑOS",
+    parrafo1: `<h3 class="sub-titulo c-azul">También</h3>
         <p class="parrafo"> Tengo experiencia haciendo 
         <span class="c-amarillo">diseños</span> para proyectos,
         musicales y de 
             emprendimiento, visita mi 
             portafolio en  <a href="https://www.behance.net/odonml" target="_blank"><span class="c-rosa">Behance</span></a>. 
             </p>`,
-            parrafo2: `<a href="https://www.behance.net/odonml" target="_blank">
+    parrafo2: `<a href="https://www.behance.net/odonml" target="_blank">
             <svg class="behance" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.28.871.28 1.443 0 .62-.14 1.138-.421 1.551-.283.414-.7.753-1.256 1.015.757.219 1.318.602 1.69 1.146.374.549.557 1.206.557 1.976 0 .625-.119 1.162-.358 1.613a3.11 3.11 0 0 1-.974 1.114 4.315 4.315 0 0 1-1.399.64 6.287 6.287 0 0 1-1.609.206H2V5.731h5.803zm-.351 4.972c.48 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.151-.707a1.114 1.114 0 0 0-.417-.428 1.683 1.683 0 0 0-.597-.215 3.609 3.609 0 0 0-.697-.061H4.71v2.875h2.742zm.151 5.239c.267 0 .521-.023.76-.077.241-.052.455-.136.637-.261.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798 0-.634-.179-1.085-.533-1.358-.355-.27-.831-.404-1.414-.404H4.71v3.39h2.893zm8.565-.041c.367.358.896.538 1.584.538.493 0 .919-.125 1.278-.373.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693-.702 0-1.334-.113-1.9-.337a4.033 4.033 0 0 1-1.439-.958 4.37 4.37 0 0 1-.905-1.485 5.433 5.433 0 0 1-.32-1.899c0-.666.111-1.289.329-1.864a4.376 4.376 0 0 1 .934-1.493c.405-.42.885-.751 1.444-.994a4.634 4.634 0 0 1 1.858-.362c.754 0 1.413.146 1.979.44a3.967 3.967 0 0 1 1.39 1.182c.363.493.622 1.058.783 1.691.161.632.217 1.292.171 1.983h-6.431c.001.704.238 1.371.606 1.729zm2.812-4.681c-.291-.322-.783-.496-1.385-.496-.391 0-.714.065-.974.199a1.97 1.97 0 0 0-.62.491 1.772 1.772 0 0 0-.328.628 2.82 2.82 0 0 0-.111.587h3.982c-.058-.624-.272-1.085-.564-1.409zm-3.918-4.663h4.989v1.215h-4.989z"></path></svg>
             </a>`,
-    },
-    {
-        id: "skills",
-        titulo: "SKILLS",
-        parrafo1: `<h3 class="sub-titulo c-azul">Conocimientos</h3>
+  },
+  {
+    id: "skills",
+    titulo: "SKILLS",
+    parrafo1: `<h3 class="sub-titulo c-azul">Conocimientos</h3>
         <div class="row">
+
         <div class="icon">
         <svg class="skills-icons c-html" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
         <p>HTML</p>
@@ -132,14 +131,13 @@ const sectionsContent =[
         <svg class="skills-icons c-fig"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.332 8.668a3.333 3.333 0 0 0 0-6.663H8.668a3.333 3.333 0 0 0 0 6.663 3.333 3.333 0 0 0 0 6.665 3.333 3.333 0 0 0 0 6.664A3.334 3.334 0 0 0 12 18.664V8.668h3.332z"></path><circle cx="15.332" cy="12" r="3.332"></circle></svg>
         <p>Figma</p>
         </div>
-        
 
-        
         </div>
         `,
-        parrafo2: `
+    parrafo2: `
         <h3 class="sub-titulo c-azul">Aprendiendo</h3>
         <div class="row">
+        
         <div class="icon">
         <svg class="skills-icons c-node" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="M12 21.985c-.275 0-.532-.074-.772-.202l-2.439-1.448c-.365-.203-.182-.277-.072-.314.496-.165.588-.201 1.101-.493.056-.037.129-.02.185.017l1.87 1.12c.074.036.166.036.221 0l7.319-4.237c.074-.036.11-.11.11-.202V7.768c0-.091-.036-.165-.11-.201l-7.319-4.219c-.073-.037-.165-.037-.221 0L4.552 7.566c-.073.036-.11.129-.11.201v8.457c0 .073.037.166.11.202l2 1.157c1.082.548 1.762-.095 1.762-.735V8.502c0-.11.091-.221.22-.221h.936c.108 0 .22.092.22.221v8.347c0 1.449-.788 2.294-2.164 2.294-.422 0-.752 0-1.688-.46l-1.925-1.099a1.55 1.55 0 0 1-.771-1.34V7.786c0-.55.293-1.064.771-1.339l7.316-4.237a1.637 1.637 0 0 1 1.544 0l7.317 4.237c.479.274.771.789.771 1.339v8.458c0 .549-.293 1.063-.771 1.34l-7.317 4.236c-.241.11-.516.165-.773.165zm2.256-5.816c-3.21 0-3.87-1.468-3.87-2.714 0-.11.092-.221.22-.221h.954c.11 0 .201.073.201.184.147.971.568 1.449 2.514 1.449 1.54 0 2.202-.35 2.202-1.175 0-.477-.185-.825-2.587-1.063-1.999-.2-3.246-.643-3.246-2.238 0-1.485 1.247-2.366 3.339-2.366 2.347 0 3.503.809 3.649 2.568a.297.297 0 0 1-.056.165c-.037.036-.091.073-.146.073h-.953a.212.212 0 0 1-.202-.164c-.221-1.012-.789-1.34-2.292-1.34-1.689 0-1.891.587-1.891 1.027 0 .531.237.696 2.514.99 2.256.293 3.32.715 3.32 2.294-.02 1.615-1.339 2.531-3.67 2.531z"></path></svg>
         <p>Node.js</p>
@@ -150,58 +148,67 @@ const sectionsContent =[
         <p>React.js</p>
         </div>
         
-        
-        
         </div>
         `,
-    },
-    
-]
+  },
+  {
+    id: "interested",
+    titulo: "INTERESES",
+    parrafo1: `<h3 class="sub-titulo c-azul">Mi Interés</h3>
+        <p class="parrafo"> 
+        Es aprender más sobre <span class="c-rosa">JavaScript</span>
+        para poder especializarme en este lenguaje.
+            </p>`,
+    parrafo2:  `<h3 class="sub-titulo c-azul">También</h3>
+    <p class="parrafo"> 
+    Estoy interesado en aprender más sobre el <span class="c-rosa">Diseño Gráfico</span>.
+        </p>`,
+  },
+];
 
 document.addEventListener("DOMContentLoaded", function () {
-    const itemActive= document.getElementById("home");
-    itemActive.classList.add("active");
-    printSection("education");
+  const itemActive = document.getElementById("home");
+  itemActive.classList.add("active");
+  printSection("education");
 });
 
 const items = document.querySelectorAll(".item");
 items.forEach((item) => item.addEventListener("click", pressItem));
 
 function pressItem() {
-const noActive = document.querySelector(".active");
-noActive.classList.remove("active");
-const id = this.getAttribute("id"); //ID Items
-this.classList.add("active");
-printSection(id);
+  const noActive = document.querySelector(".active");
+  noActive.classList.remove("active");
+  const id = this.getAttribute("id"); //ID Items
+  this.classList.add("active");
+  printSection(id);
 }
 
-function printSection(section){
-    let sec = findContent(section);
-    title.setAttribute("data-text", sec.titulo);
-    title.innerText = sec.titulo;
-    caja2.innerHTML = sec.parrafo1;
-    caja3.innerHTML = sec.parrafo2;
-    console.log(section);
-    if(section === "design"){
-        caja2.classList.remove("iconos");
-        caja3.classList.add("iconos");
-    }else if(section === "skills"){
-        caja2.classList.add("iconos");
-        caja3.classList.add("iconos");
-    }else{
-        caja2.classList.remove("iconos");
-        caja3.classList.remove("iconos");
-    }
-    caja1.appendChild(title);
-    secundario.appendChild(caja1);
-    secundario.appendChild(caja2);
-    principal.appendChild(secundario);
-    terciario.appendChild(caja3);
-    principal.appendChild(terciario);
-    frag.appendChild(principal);
-    content.appendChild(frag);
-
+function printSection(section) {
+  let sec = findContent(section);
+  title.setAttribute("data-text", sec.titulo);
+  title.innerText = sec.titulo;
+  caja2.innerHTML = sec.parrafo1;
+  caja3.innerHTML = sec.parrafo2;
+  console.log(section);
+  if (section === "design") {
+    caja2.classList.remove("iconos");
+    caja3.classList.add("iconos");
+  } else if (section === "skills") {
+    caja2.classList.add("iconos");
+    caja3.classList.add("iconos");
+  } else {
+    caja2.classList.remove("iconos");
+    caja3.classList.remove("iconos");
+  }
+  caja1.appendChild(title);
+  secundario.appendChild(caja1);
+  secundario.appendChild(caja2);
+  principal.appendChild(secundario);
+  terciario.appendChild(caja3);
+  principal.appendChild(terciario);
+  frag.appendChild(principal);
+  content.appendChild(frag);
 }
 const findContent = (section) => {
-    return sectionsContent.find(e => e.id === section);
-}
+  return sectionsContent.find((e) => e.id === section);
+};
