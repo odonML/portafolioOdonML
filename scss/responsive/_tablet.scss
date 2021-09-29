@@ -47,4 +47,10 @@
   .iconos{
     @include displayFlexBox(flex, column, center, center, nowrap);
   }
+
+  .skills-icons{
+    width: 35px;
+    height: 35px;
+  }
+
 }

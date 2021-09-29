@@ -391,6 +391,80 @@ h2 {
   fill: #FF00FF;
 }
 
+.c-html {
+  fill: #E9622E;
+}
+
+.c-css {
+  fill: #3A97D0;
+}
+
+.c-js {
+  fill: #F7C52C;
+}
+
+.c-sass {
+  fill: #C06190;
+}
+
+.c-boot {
+  fill: #807EEF;
+}
+
+.c-git {
+  fill: #EB4E30;
+}
+
+.c-github {
+  fill: #9A9A9A;
+}
+
+.c-fire {
+  fill: #F7C52C;
+}
+
+.c-angu {
+  fill: #f57061;
+}
+
+.c-fig {
+  fill: #19B6F6;
+}
+
+.c-node {
+  fill: #86BE00;
+}
+
+.c-react {
+  fill: #5ED4F4;
+}
+
+.c-redux {
+  fill: #7760B6;
+}
+
+.c-vue {
+  fill: #55AF79;
+}
+
+.icon {
+  margin: 5px;
+  padding: 2px;
+  text-align: center;
+  border-bottom: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.icon:hover {
+  color: #FF00FF;
+  border-top: solid 1px #FF00FF;
+}
+
+.icon:hover svg {
+  fill: #FF00FF;
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 14px;
@@ -507,6 +581,10 @@ h2 {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .skills-icons {
+    width: 35px;
+    height: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
