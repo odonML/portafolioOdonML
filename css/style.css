@@ -15,6 +15,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   font-family: "Roboto-Mono";
+  font-size: 10px;
   color: #ffffff;
   overflow: hidden;
 }
@@ -55,6 +56,7 @@ button {
           align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  border: solid 1px blue;
 }
 
 .row {
@@ -80,16 +82,21 @@ button {
   margin: 5px;
 }
 
+.principal {
+  max-width: 500px;
+  border: solid 1px red;
+}
+
 .titulo {
-  font-size: 60px;
+  font-size: 3.7em;
 }
 
 .sub-titulo {
-  font-size: 35px;
+  font-size: 2.5em;
 }
 
 .parrafo {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 .c-rosa {
@@ -105,7 +112,7 @@ button {
 }
 
 .c-angular {
-  color: #FF7D7D;
+  color: #f57061;
 }
 
 .active {
@@ -113,20 +120,14 @@ button {
   color: #FF00FF;
 }
 
-.behance {
-  width: 70px;
-  height: 70px;
-  fill: #FF00FF;
-}
-
 .iconos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -137,8 +138,13 @@ button {
       flex-wrap: nowrap;
 }
 
+.skills-icons {
+  width: 40px;
+  height: 40px;
+}
+
 h2 {
-  font-size: 2.5em;
+  font-size: 3.7em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -380,6 +386,9 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -417,6 +426,7 @@ h2 {
   }
   .principal {
     width: 100%;
+    max-width: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -472,23 +482,6 @@ h2 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .iconos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }

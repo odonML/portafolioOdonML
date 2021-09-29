@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+  body{
+    font-size: 14px;
+  }
   .container {
     @include displayFlexBox(flex, column, space-between, flex-start, nowrap);
   }
@@ -24,6 +27,7 @@
   }
   .principal {
     width: 100%;
+    max-width: none;
     @include displayFlexBox(flex, row, center, center, nowrap);
     .secundario {
       width: 66%;
@@ -40,7 +44,5 @@
     padding: 8px;
     @include displayFlexBox(flex, column, center, flex-start, nowrap);
   }
-  .iconos{
-    @include displayFlexBox(flex, row, center, center, nowrap);
-  }
+
 }
