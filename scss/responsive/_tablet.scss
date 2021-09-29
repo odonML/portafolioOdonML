@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+  body{
+    font-size: 10px;
+  }
   .container {
     @include displayFlexBox(flex, column, space-between, flex-start, nowrap);
   }
@@ -9,6 +12,10 @@
       .item {
         margin: 0px 5px;
         padding: 5px;
+        &:hover{
+          border-top: solid 1px $color-segundo;
+          color: $color-segundo;
+      }
         .item-text {
           display: block;
         }
@@ -20,6 +27,7 @@
   }
   .principal {
     width: 100%;
+    max-width: none;
     @include displayFlexBox(flex, row, center, center, nowrap);
     .secundario {
       width: 66%;
@@ -37,6 +45,12 @@
     @include displayFlexBox(flex, column, center, flex-start, nowrap);
   }
   .iconos{
-    @include displayFlexBox(flex, row, center, center, nowrap);
+    @include displayFlexBox(flex, column, center, center, nowrap);
   }
+
+  .skills-icons{
+    width: 35px;
+    height: 35px;
+  }
+
 }

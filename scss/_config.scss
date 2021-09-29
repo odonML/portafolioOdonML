@@ -12,7 +12,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     font-family: "Roboto-Mono";
+    font-size: 10px;
     color: $color-primero; //este color cambiar a blanco. $color-primero
+    
     overflow: hidden;
 }
 ul{
@@ -21,6 +23,12 @@ ul{
 a{
     text-decoration: none;
     color: $color-primero;
+}
+a.link{
+  padding: 0px 5px;
+  &:hover{
+    border: solid 1px $color-segundo;
+  }
 }
 button{
   border: none;
@@ -34,18 +42,19 @@ button{
     height: 100vh;
     padding: 0px 15px;
     margin: 0px auto;
-    // border: solid 1px red;
     @include displayFlexBox(flex, column-reverse, space-between, flex-start, nowrap);
 }
 .row{
     width: 100%;
-
-    // border: solid 1px red;
     @include displayFlexBox(flex, row, center, center, nowrap);
 }
 .caja{
   margin: 5px;
 }
+.principal{
+  max-width: 500px;
+}
+// font-size
 .titulo{
     font-size: $titulo-size;
 }
@@ -55,6 +64,7 @@ button{
 .parrafo{
     font-size: $parrafo-size;
 }
+// color
 .c-rosa{
     color: $color-segundo;
 }
@@ -63,7 +73,8 @@ button{
 }
 .c-amarillo{
     color: $color-cuarto;
-}
+  }
+  
 .c-angular{
     color: $color-angular;
 }
@@ -72,20 +83,20 @@ button{
   border-bottom: solid 1px $color-segundo;
   color: $color-segundo;
 }
-.behance{
-  width: 70px;
-  height: 70px;
-  fill: $color-segundo;
-}
+
 .iconos{
-  @include displayFlexBox(flex, row, center, center, nowrap);
+  @include displayFlexBox(flex, column, center, center, nowrap);
+}
+.skills-icons{
+  width: 40px;
+  height: 40px;
 }
 // Efecto de glitch
 h2 {
-    font-size: 2.5em;
+    font-size: $titulo-size;
     text-transform: uppercase;
-    // margin-top: -17px;
-    // animation: titulo 250ms;
+    margin-top: 0px;
+    animation: titulo 250ms;
     text-align: center;
   }
 
@@ -126,7 +137,7 @@ h2 {
 
   @keyframes titulo {
     0% {
-      margin-top: 800px;
+      margin-top: 50px;
     }
     100% {
       margin-top: 0px;
