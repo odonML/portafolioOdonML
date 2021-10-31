@@ -3,6 +3,12 @@ const principal = document.createElement("div");
 const secundario = document.createElement("div");
 const terciario = document.createElement("div");
 
+// HOME----
+const img = document.createElement("img");
+img.src = "./img/banner-mini.png";
+img.classList.add("imagen");
+img.alt = "fotografia de Odon ML";
+
 const caja1 = document.createElement("div");
 const caja2 = document.createElement("div");
 const caja3 = document.createElement("div");
@@ -20,6 +26,19 @@ const content = document.getElementById("content");
 const frag = document.createDocumentFragment();
 
 const sectionsContent = [
+  {
+    id: "home",
+    titulo: "Odon ML",
+    parrafo1: `<h3 class="sub-titulo">Hola, Soy</h3>`,
+    parrafo2: `<h3 class="sub-titulo c-azul"></h3>
+        <p class="parrafo">
+        <span class="c-amarillo">Mexicano</span>,
+        Tec. En Programacíon,
+        <span class="c-azul">Ing. En Sistemas</span>,
+        <span class="c-rosa">Frontend Developer</span> e
+        Ilustrador Aficionado.
+        </p>`,
+  },
   {
     id: "education",
     titulo: "EDUCACIÓN",
@@ -185,7 +204,7 @@ const sectionsContent = [
 document.addEventListener("DOMContentLoaded", function () {
   const itemActive = document.getElementById("home");
   itemActive.classList.add("active");
-  printSection("education");
+  printSection("home");
 });
 
 const items = document.querySelectorAll(".item");
@@ -206,16 +225,23 @@ function printSection(section) {
   caja2.innerHTML = sec.parrafo1;
   caja3.innerHTML = sec.parrafo2;
   
+  secundario.classList.remove("no-secundario");
+  caja2.classList.remove("iconos");
+  caja3.classList.remove("iconos");
   if (section === "design") {
-    caja2.classList.remove("iconos");
     caja3.classList.add("iconos");
   } else if (section === "skills") {
     caja2.classList.add("iconos");
     caja3.classList.add("iconos");
-  } else {
-    caja2.classList.remove("iconos");
-    caja3.classList.remove("iconos");
+  } else if(section === "home"){
+    secundario.classList.add("no-secundario");
+  }else{
+    img.remove()
   }
+
+  // if(section === "home"){
+  //   caja1.appendChild(img);
+  // }
   caja1.appendChild(title);
   secundario.appendChild(caja1);
   secundario.appendChild(caja2);
