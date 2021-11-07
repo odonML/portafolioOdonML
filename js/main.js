@@ -4,10 +4,10 @@ const secundario = document.createElement("div");
 const terciario = document.createElement("div");
 
 // HOME----
-const img = document.createElement("img");
-img.src = "./img/banner-mini.png";
-img.classList.add("imagen");
-img.alt = "fotografia de Odon ML";
+// const img = document.createElement("img");
+// img.src = "./img/banner-mini.png";
+// img.classList.add("imagen");
+// img.alt = "fotografia de Odon ML";
 
 const caja1 = document.createElement("div");
 const caja2 = document.createElement("div");
@@ -236,7 +236,7 @@ function printSection(section) {
   } else if(section === "home"){
     secundario.classList.add("no-secundario");
   }else{
-    img.remove()
+    // img.remove()
   }
 
   // if(section === "home"){
