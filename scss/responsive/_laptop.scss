@@ -1,19 +1,24 @@
 @media (min-width: 999px) {
-    body{
-        font-size: 14px;
-    }
-    img.imagen{
-        display: block;
-        // width: 100%;
-        max-width: 70%;
-        margin: 0px auto;
-        border-radius: 50%;
-      }
-    a.link{
-        padding: 0px 5px;
-        &:hover{
-          border: solid 1px $color-segundo;
-        }
-    }
+  body {
+    font-size: 14px;
+  }
+  img.imagen {
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: 20%;
+    // bottom: 0;
+    display: block;
+    // width: 100%;
+    width: 190px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
 
+  a.link {
+    padding: 0px 5px;
+    &:hover {
+      border: solid 1px $color-segundo;
+    }
+  }
 }

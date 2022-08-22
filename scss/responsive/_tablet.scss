@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-  body{
+  body {
     font-size: 10px;
   }
   .container {
@@ -10,12 +10,12 @@
       padding: none;
       border-radius: none;
       .item {
-        margin: 0px 5px;
+        margin: 0px 20px;
         padding: 5px;
-        &:hover{
+        &:hover {
           border-top: solid 1px $color-segundo;
           color: $color-segundo;
-      }
+        }
         .item-text {
           display: block;
         }
@@ -33,24 +33,29 @@
       width: 66%;
       @include displayFlexBox(flex, row-reverse, center, center, nowrap);
       .caja {
-          width: 50%;
+        width: 50%;
       }
     }
     .terciario {
-        width: 33%;
+      width: 33%;
     }
   }
-  .contenido{
+  .contenido {
     padding: 8px;
     @include displayFlexBox(flex, column, center, flex-start, nowrap);
   }
-  .iconos{
+  .iconos {
     @include displayFlexBox(flex, column, center, center, nowrap);
   }
 
-  .skills-icons{
+  .skills-icons {
     width: 35px;
     height: 35px;
   }
-    
+
+  .social-nav {
+    .list {
+      width: 40%;
+    }
+  }
 }
