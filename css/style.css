@@ -352,6 +352,7 @@ img.imagen {
   padding: 2px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .navbar .list .item {
@@ -530,6 +531,7 @@ img.imagen {
   .navbar .list {
     padding: none;
     border-radius: none;
+    margin-bottom: 0px;
   }
   .navbar .list .item {
     margin: 0px 20px;
