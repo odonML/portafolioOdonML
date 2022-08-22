@@ -1,58 +1,61 @@
- //COLOR LOGOS SVG
- .c-html{
+//COLOR LOGOS SVG
+.c-html {
   fill: $color-html;
 }
-.c-css{
-  fill: $color-css ;
+.c-css {
+  fill: $color-css;
 }
-.c-js{
-  fill: $color-js ;
+.c-js {
+  fill: $color-js;
 }
-.c-sass{
+.c-sass {
   fill: $color-sass;
 }
-.c-boot{
+.c-boot {
   fill: $color-boot;
 }
-.c-git{
-  fill: $color-git ;
+.c-git {
+  fill: $color-git;
 }
-.c-github{
+.c-github {
   fill: $color-github;
 }
-.c-fire{
-  fill: $color-fire ;
+.c-fire {
+  fill: $color-fire;
 }
-.c-angu{
+.c-angu {
   fill: $color-angular;
 }
-.c-fig{
-  fill: $color-fig ;
+.c-fig {
+  fill: $color-fig;
 }
 
-.c-node{
-  fill: $color-node ;
+.c-node {
+  fill: $color-node;
 }
-.c-react{
+.c-react {
   fill: $color-react;
 }
-.c-redux{
+.c-redux {
   fill: $color-redux;
 }
-.c-vue{
+.c-vue {
   fill: $color-vue;
 }
-.icon{
+.c-atomico {
+  fill: $color-primero;
+}
+.icon {
   margin: 5px;
   padding: 2px;
   text-align: center;
   border-bottom: none;
-  transition: .5s;
-  &:hover{
-      color: $color-segundo;
-      border-top: solid 1px $color-segundo;
-      svg{
-          fill: $color-segundo;
-      }
+  transition: 0.5s;
+  &:hover {
+    color: $color-segundo;
+    border-top: solid 1px $color-segundo;
+    svg {
+      fill: $color-segundo;
+    }
   }
 }
