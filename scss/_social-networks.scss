@@ -1,14 +1,18 @@
-.social-nav{
-    height: 50px;
-    // width esta en _config/.row
-    .list{
-        width: 100%;
-        @include displayFlexBox(flex, row, space-between, center, nowrap);
-        .item{
-            height: 24px;
-            .item-social-icon{
-                fill: $color-segundo;
-            }
+.social-nav {
+  height: 50px;
+  // width esta en _config/.row
+  .list {
+    width: 90%;
+    @include displayFlexBox(flex, row, space-between, center, nowrap);
+    .item-social {
+      height: 20px;
+      .item-social-icon {
+        fill: $color-segundo;
+        &:hover {
+          transition: 0.5s;
+          fill: $color-tercero;
         }
+      }
     }
+  }
 }
